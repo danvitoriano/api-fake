@@ -244,4 +244,10 @@ router.get("/api/wallet/user/statements/:statmentId", function (req, res) {
   }
 });
 
+router.post("/post", function (req, res) {
+  const dados = req.body;
+  console.log(dados);
+  res.json(dados);
+});
+
 module.exports = router;
